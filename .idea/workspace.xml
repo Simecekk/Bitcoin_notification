@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8522cfc3-be86-4011-9fc7-3dffcc72b4fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Scripts/Activate.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/activate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/deactivate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/python.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pythonw.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/balarm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/btc.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/balarm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/balarm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="92" lean-forward="true" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+            <state relative-caret-position="544">
+              <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -49,6 +40,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/balarm.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
@@ -84,6 +82,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -140,21 +139,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993395" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006605" side_tool="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -167,8 +167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/balarm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="92" lean-forward="true" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+        <state relative-caret-position="544">
+          <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
