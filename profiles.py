@@ -4,10 +4,10 @@ conn = sqlite3.connect('profiles.db')
 c = conn.cursor()
 
 # Create Table in DB
-# c.execute("""CREATE TABLE users(
-#             name text,
-#             bitcoin integer,
-#             currency integer    )""")
+c.execute("""CREATE TABLE users(
+             name text,
+             bitcoin integer,
+             currency integer    )""")
 
 
 # Create profile with your information
