@@ -1,4 +1,6 @@
 /Bitcoin_notification.git
-/Include
-/Scripts
+profiles.db
+desktop.ini
 pyvenv.cfg
+/Include
+/Lib
