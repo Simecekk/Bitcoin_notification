@@ -2,13 +2,12 @@ import requests
 import time
 from win10toast import ToastNotifier
 from menu import menu, profile
+
 toaster = ToastNotifier()
 
 
 print(' Welcome in Balarm. Bitcoin notification app for windows')
 print('*********************************************************')
-
-menu()
 
 # This function will return float number which will represent price of 1 btc in USD.
 def get_bitcoin_rate_usd():
@@ -48,31 +47,40 @@ def check_bitcoin_rate(bitcoin_rate, bitcoin_price):
         return f'Bitcoin is less than {bitcoin_price}, bitcoin is : {bitcoin_rate}'
 
 
-# returns worth of yours bitcoin in CZK
-def czk_bitcoin_worth(price_in_czk):
-    worth_in_czk = price_in_czk * profile[0][1]
-    return round(worth_in_czk)
+ # returns worth of yours bitcoin in CZK
+def czk_bitcoin_worth(price_in_czk): 
+     worth_in_czk = price_in_czk * profile[0][1]
+     return round(worth_in_czk)
 
-while True:
-    # Flash notification with btc prices in USD and CZK every two minutes.
 
-    if profile[0][2] == 1:
-        # If user chose CZK
+if __name__ == '__main__':
+    
+    menu()
 
-        messages_btc = 'HODL'
-        toaster.show_toast(f" btc is {btc_in_czk(get_bitcoin_rate_usd()):,} K CZK", messages_btc, icon_path='.\\icons\\btc.ico', threaded=True, duration=5)
-        time.sleep(120)
+    def czk_bitcoin_worth(price_in_czk): 
+        worth_in_czk = price_in_czk * profile[0][1]
+        return round(worth_in_czk)
 
-    if profile[0][2] == 2:
-        # If user chose USD
+    while True:
+        # Flash notification with btc prices in USD and CZK every two minutes.
 
-        messages_btc = 'HODL'
-        toaster.show_toast(f" btc is {get_bitcoin_rate_usd():,} K $", messages_btc, icon_path='.\\icons\\btc.ico', threaded=True, duration=5)
-        time.sleep(120)
+        if profile[0][2] == 1:
+            # If user chose CZK
 
-    if profile[0][2] == 3:
-        # If user chose both
+            messages_btc = 'HODL'
+            toaster.show_toast(f" btc is {btc_in_czk(get_bitcoin_rate_usd()):,} K CZK", messages_btc, icon_path='.\\icons\\btc.ico', threaded=True, duration=5)
+            time.sleep(120)
 
-        messages_btc = f'btc is {btc_in_czk(get_bitcoin_rate_usd()):,} K CZK\nYou own {czk_bitcoin_worth(btc_in_czk(get_bitcoin_rate_usd())):,} CZK '
-        toaster.show_toast(f" btc is {get_bitcoin_rate_usd():,} K $", messages_btc, icon_path='.\\icons\\btc.ico', threaded=True, duration=7)
-        time.sleep(120)
+        if profile[0][2] == 2:
+            # If user chose USD
+
+            messages_btc = 'HODL'
+            toaster.show_toast(f" btc is {get_bitcoin_rate_usd():,} K $", messages_btc, icon_path='.\\icons\\btc.ico', threaded=True, duration=5)
+            time.sleep(120)
+
+        if profile[0][2] == 3:
+            # If user chose both
+
+            messages_btc = f'btc is {btc_in_czk(get_bitcoin_rate_usd()):,} K CZK\nYou own {czk_bitcoin_worth(btc_in_czk(get_bitcoin_rate_usd())):,} CZK '
+            toaster.show_toast(f" btc is {get_bitcoin_rate_usd():,} K $", messages_btc, icon_path='.\\icons\\btc.ico', threaded=True, duration=7)
+            time.sleep(120)

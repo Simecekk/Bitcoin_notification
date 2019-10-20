@@ -29,7 +29,7 @@ def menu():
         try:
             print(c.fetchall())
         except:
-            print('There is not any profile in DB')
+            print('Nothing here')
             print('\n')
             menu()
         deleted_name = str(input('Type name of profile, which you want to delete: '))
